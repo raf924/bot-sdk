@@ -1,0 +1,6 @@
+github.com/raf924/bot v1.1.1 h1:k0IHznPwigarSS7fCw/sGvHOJbuZrXlcQjn9uZjhueA=
+github.com/raf924/bot v1.1.1/go.mod h1:ooJyQ5HEjhFY59c2CCkZRgIlwFRmyBpFc2J5ZDb50AY=
+github.com/segmentio/ksuid v1.0.4 h1:sBo2BdShXjmcugAMwjugoGUdUV0pcxY5mW4xKRn3v4c=
+github.com/segmentio/ksuid v1.0.4/go.mod h1:/XUiZBD3kVx5SmUOl55voK5yeAbBNNIed+2O73XgrPE=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
