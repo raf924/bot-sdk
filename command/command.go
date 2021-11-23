@@ -2,7 +2,23 @@ package command
 
 import (
 	"github.com/raf924/connector-sdk/domain"
+	"log"
+	"reflect"
 )
+
+var commands = NewCommandList()
+
+func HandleCommand(command Command) {
+	log.Println("Handling", command.Name())
+	if reflect.TypeOf(command).Kind() != reflect.Ptr {
+		log.Println("command must be a pointer type")
+	}
+	commands.Add(command)
+}
+
+func GetCommandList() List {
+	return commands
+}
 
 type Executor interface {
 	BotUser() *domain.User
