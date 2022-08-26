@@ -129,6 +129,7 @@ func (c *CommandMessage) Timestamp() time.Time {
 type ClientMessage struct {
 	message   string
 	recipient *User
+	emote     bool
 	private   bool
 }
 
@@ -146,6 +147,10 @@ func (c *ClientMessage) Private() bool {
 
 func NewClientMessage(message string, recipient *User, private bool) *ClientMessage {
 	return &ClientMessage{message: message, recipient: recipient, private: private}
+}
+
+func NewEmote(message string) *ClientMessage {
+	return &ClientMessage{message: message, emote: true}
 }
 
 type RegistrationMessage struct {
