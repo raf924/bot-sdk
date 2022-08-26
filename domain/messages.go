@@ -133,6 +133,10 @@ type ClientMessage struct {
 	private   bool
 }
 
+func (c *ClientMessage) Emote() bool {
+	return c.emote
+}
+
 func (c *ClientMessage) Message() string {
 	return c.message
 }
